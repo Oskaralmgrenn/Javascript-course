@@ -1,60 +1,60 @@
-//
+// //
 
-// Strings and template literals
+// // Strings and template literals
 
-// const firstName = "Oskar";
-// const birthYear = 1997;
-// const job = "programmer";
-// const year = 2023;
+// // const firstName = "Oskar";
+// // const birthYear = 1997;
+// // const job = "programmer";
+// // const year = 2023;
 
-// const oskar =
-//   "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
+// // const oskar =
+// //   "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
 
-// console.log(oskar);
+// // console.log(oskar);
 
-// // Template literals makes it easier for you to write sting scentences
+// // // Template literals makes it easier for you to write sting scentences
 
-// const oskarNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+// // const oskarNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
 
-// console.log(oskarNew);
+// // console.log(oskarNew);
 
-// console.log(`Just a normal string...`);
+// // console.log(`Just a normal string...`);
 
-// console.log(
-//   "String\n\
-// with\n\
-// multiple\n\
-// lines"
-// );
+// // console.log(
+// //   "String\n\
+// // with\n\
+// // multiple\n\
+// // lines"
+// // );
 
-// console.log(`String
-// with
-// multiple
-// lines`);
+// // console.log(`String
+// // with
+// // multiple
+// // lines`);
 
-// // Taking decisions and if/else statements
+// // // Taking decisions and if/else statements
 
-// const age = 15;
-// //const isOldEnough = age >= 18; //Not needed. Just write this value in the if statement instead
+// // const age = 15;
+// // //const isOldEnough = age >= 18; //Not needed. Just write this value in the if statement instead
 
-// if (age >= 18) {
-//   console.log(`Oskar can start taking his driverslicense 🏎`);
-// } else {
-//   const yearsLeft = 18 - age;
-//   console.log(`Oskar is too young, wait another ${yearsLeft} years`);
-// }
+// // if (age >= 18) {
+// //   console.log(`Oskar can start taking his driverslicense 🏎`);
+// // } else {
+// //   const yearsLeft = 18 - age;
+// //   console.log(`Oskar is too young, wait another ${yearsLeft} years`);
+// // }
 
-// const birthYear = 1997;
+// // const birthYear = 1997;
 
-// let century;
+// // let century;
 
-// if (birthYear <= 2000) {
-//   century = 20;
-// } else {
-//   century = 21;
-// }
+// // if (birthYear <= 2000) {
+// //   century = 20;
+// // } else {
+// //   century = 21;
+// // }
 
-// console.log(century);
+// // console.log(century);
 
 // CHALLENGE #2
 // Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
@@ -82,17 +82,8 @@ console.log(BMIMark, BMIJohn);
 
 /* Write your code below. Good luck! 🙂 */
 
-if (BMIJohn <= BMIMark) {
-  console.log(
-    "Mark's BMI " +
-      "(" +
-      BMIMark +
-      ")" +
-      " is higher than John's " +
-      "(" +
-      BMIJohn +
-      ")!"
-  );
+if (BMIJohn < BMIMark) {
+  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
 } else {
-  console.log("Johns's BMI" + "(" + BMIJohn + ")" + "is higher than Mark's!");
+  console.log(`John's BMI (${BMIJohn}) is higher than Marks's (${BMIMark})!`);
 }
